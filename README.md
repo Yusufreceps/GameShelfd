@@ -1,4 +1,4 @@
-# Gameboxd
+# GameShelfd
 
 Bu proje BLM2537 Ağ Tabanlı Programlama dersi için geliştirmiş oldupğum bir projedir. 
 
