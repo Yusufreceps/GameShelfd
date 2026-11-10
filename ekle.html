@@ -25,6 +25,39 @@
     <hr>
     <main>
         <h1>Profile Oyun Ekle</h1>
+        <form id="oyunFormu">
+            <div>
+                <label for="oyunAdi">Oyun Adı</label>
+                <input type="text" id="oyunAdi" name="oyunAdi" required>
+            </div>
+
+            <div>
+                <label for="puan">Puan (1-10)</label>
+                <input type="number" id="puan" name="puan" min="1" max="10" required>
+            </div>
+            <div>
+                <label for="platform">Platform</label>
+                <select id="platform" name="platform">
+                    <option value="">Seçiniz</option>
+                    <option value="PC">PC</option>
+                    <option value="PlayStation">PlayStation</option>
+                    <option value="Switch">Switch</option>
+                </select>
+            </div>
+            <div>
+                <p>Oynanma Durumu</p>
+                <input type="radio" id="oynadim" name="durum" value="Oynadım">
+                <label for="oynadim">Oynadım</label>
+
+                <input type="radio" id="oynuyorum" name="durum" value="Oynuyorum">
+                <label for="oynuyorum">Oynuyorum</label>
+            </div>
+            <div>
+                <label for="yorum">Yorum</label>
+                <textarea id="yorum" name="yorum" rows="4" cols="40"></textarea>
+            </div>
+            <button type="submit">Oyunu Ekle</button>
+        </form>
     </main>
     <hr>
     <footer>

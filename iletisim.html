@@ -2,44 +2,65 @@
 <html lang="tr">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0",>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Yusuf">
         <meta name="description" content="İletişim sayfasi">
         <title>İletişim</title>
         <link rel="icon" href="img/trflag.png">
         <link rel="stylesheet" href="css/style.css">
+        <script src="js/main.js" defer></script>
     </head>
     
     <body>
         <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Ana Sayfa</a></li>
-                <li><a href="kutuphane.html">Profilim</a></li>
-                <li><a href="wishlist.html">İstek Listesi</a></li>
-                <li><a href="ekle.html">Profile Oyun Ekle</a></li>
-                <li><a href="iletisim.html" class="active">İletişim</a></li>
-            </ul>
-        </nav>
-        <hr>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Ana Sayfa</a></li>
+                    <li><a href="kutuphane.html">Profilim</a></li>
+                    <li><a href="wishlist.html">İstek Listesi</a></li>
+                    <li><a href="ekle.html">Profile Oyun Ekle</a></li>
+                    <li><a href="iletisim.html" class="active">İletişim</a></li>
+                </ul>
+            </nav>
+            <hr>
         </header>
         <main>
-        <h1>İletişim</h1>
-        <hr>
-        <ul>
-            <li>Geri bildirim formu</li>
-            <li>Site hakkında bilgi</li>
-            <li> <a href="https://www.linkedin.com/in/yusuf-sertkaya-b09b98436/" target="_blank">Linkedin profile</a></li>
-        </ul>
+            <h1>İletişim</h1>
+                <hr>
+            <h2>Geri Bildirim Formu</h2>
+            <form id="geriBildirimFormu">
+                <div>
+                    <label for="ad">Ad</label>
+                    <input type="text" id="ad" name="ad" required>
+                </div>
+                
+                <div>
+                    <label for="eposta">E-posta</label>
+                    <input type="email" id="eposta" name="eposta" required>
+                </div>
+
+                <div>
+                    <label for="konu">Konu</label>
+                    <select id="konu" name="konu">
+                        <option value="">Seçiniz</option>
+                        <option value="destek">Destek</option>
+                        <option value="oneri">Öneri</option>
+                        <option value="diger">Diğer</option>
+                    </select>
+                </div>
+                
+                <div>
+                    <label for="mesaj">Mesaj</label>
+                    <textarea id="mesaj" name="mesaj" rows="4" cols="40"></textarea>
+                </div>
+            </form>
         
-        <hr>
-        <p>
-            i study in ankara university computer engineering department. Im a 2nd year student who studied Python and C languages. I am currently learning HTML and i plan to learn CSS, JavaScript and more.
-        </p>
+                <hr>
+            <p>i study in ankara university computer engineering department. Im a 2nd year student who studied Python and C languages. I am currently learning HTML and i plan to learn CSS, JavaScript and more.</p>
         </main>
-        <hr>
+            <hr>
         <footer>
-        <a href="iletisim.html"><img src="img/frostbite.webp" width="25" alt="profil ikonu"> Yusuf Sertkaya</a>
+            <a href="iletisim.html"><img src="img/frostbite.webp" width="25" alt="profil ikonu"> Yusuf Sertkaya</a>
         </footer>
     </body>
 

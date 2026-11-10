@@ -33,3 +33,17 @@ nav ul{
 section {
     margin-bottom: 2rem;
 }
+
+form {
+    font-size: 1.2rem;
+}
+
+input, button, select {
+    font-size: 1rem;
+    padding: 0.2rem;
+}
+table, th, td {
+    border: 1px solid gray;
+    border-collapse: collapse;
+    padding: 0.4rem;
+}
